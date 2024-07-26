@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <title></title>
+        <!-- Include jQuery first -->
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <!-- Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+        <!-- Include DataTables CSS and JS -->
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"> -->
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+        <!-- Include Bootsrtap CSS and JS -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+        
+        <style>
+            /* Custom styling to align with Tailwind */
+            table.dataTable {
+                border-collapse: separate;
+                border-spacing: 0;
+                width: 100%;
+            }
+            table.dataTable thead th,
+            table.dataTable tbody td {
+                padding: 0.75rem;
+                vertical-align: middle;
+                text-align: left;
+            }
+            table.dataTable thead th {
+                background-color: #f3f4f6; /* Tailwind gray-100 */
+                border-bottom: 2px solid #e5e7eb; /* Tailwind gray-200 */
+            }
+            table.dataTable tbody tr:nth-child(even) {
+                background-color: #f9fafb; /* Tailwind gray-50 */
+            }
+            table.dataTable tbody tr:hover {
+                background-color: #e5e7eb; /* Tailwind gray-200 */
+            }
+            div.dataTables_filter {
+                vertical-align: middle;
+            }
+            div.dataTables_filter > label > input {
+                font-family: sans-serif;
+                vertical-align: middle;
+            }
+            div.dataTables_paginate {
+                margin: 1x;
+            }
+            a.paginate_button {
+                padding: 5px;
+                border-color: #000000;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-100 p-6">
+        <div class="container mx-auto">
+            <h1 class="text-3x1 font-semibold mb-4">Registry</h1>
+            <table id="dataTable" class="display bg-white shadow rounded-lg overflow-hidden" style="width:100%">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Domstol</th>
+                        <th class="px-4 py-2">Målnummer</th>
+                        <th class="px-4 py-2">År</th>
+                        <th class="px-4 py-2">Brott</th>
+                        <th class="px-4 py-2">FUP</th>
+                        <th class="px-4 py-2">Dom</th>
+                        <th class="px-4 py-2">Påföljd</th>
+                        <th class="px-4 py-2">Notat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+
+                function highlightText(text, search) {
+                    if (!search) return text;
+                    const regex = new RegExp(`(${search})`, 'gi');
+                    return text.replace(regex, '<b>$1</b>');
+                }
+
+                // Fetch data from the Flask endpoint
+                $.ajax({
+                    url: "/data",
+                    type: "GET",
+                    success: function(data) {
+                        // console.log(data); // Debug print to verify data
+                        // Populate DataTable with the data
+                        $('#dataTable').DataTable({
+                            data: data,
+                            columns: [
+                            { data: 'Domstol', },
+                            { data: 'Målnummer' },
+                            { data: 'Mål registrerat år' },
+                            { data: 'Brott' },
+                            { data: 'FUP' },
+                            { data: 'Dom' },
+                            { data: 'Påföljd' },
+                            { data: 'Notat' }
+                            ],
+                            createdRow: function(row, data, dataIndex) {
+                            // Save original cell data to data-original attribute
+                            $('td', row).each(function(index) {
+                                $(this).attr('data-original', $(this).text());
+                            });
+                        },
+                        drawCallback: function(settings) {
+                            const searchTerm = $('#dataTable_filter input').val();
+                            $('#dataTable tbody tr').each(function() {
+                                $(this).find('td').each(function() {
+                                    // Reset to original data
+                                    const originalData = $(this).attr('data-original');
+                                    $(this).html(highlightText(originalData, searchTerm));
+                                });
+                            });
+                        }
+                    });
+
+                    // Event listener to re-render the table on search
+                    $('#dataTable_filter input').on('input', function() {
+                        table.draw();
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Failed to fetch data: ", error); // Debug print for errors
+                }
+            });
+        });
+    </script>
+    </body>
+</html>
