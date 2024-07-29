@@ -1,0 +1,91 @@
+body {
+    background-color: #ffffff;
+    color: #1f2937; /* Tailwind gray-800 */
+}
+table.dataTable {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+table.dataTable thead th,
+table.dataTable tbody td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    text-align: left;
+    color: #1f2937; /* Tailwind gray-800 */
+}
+table.dataTable thead th {
+    background-color: #f3f4f6; /* Tailwind gray-100 */
+    border-bottom: 2px solid #d1d5db; /* Tailwind gray-300 */
+}
+table.dataTable tbody tr:nth-child(even) {
+    background-color: #e5e7eb; /* Tailwind gray-200 */
+}
+table.dataTable tbody tr:hover {
+    background-color: #d1d5db; /* Tailwind gray-300 */
+}
+/* Custom styling for pagination buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #2563eb; /* Tailwind blue-600 */
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #1d4ed8; /* Tailwind blue-700 */
+    color: #ffffff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    background-color: #9ca3af; /* Tailwind gray-400 */
+    color: #ffffff;
+}
+/* Custom styling for the search input */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 1rem;
+}
+.dataTables_wrapper .dataTables_filter label {
+    font-weight: 600;
+    color: #1f2937; /* Tailwind gray-800 */
+}
+.dataTables_wrapper .dataTables_filter input {
+    padding: 0.5rem 1rem;
+    margin-left: 0.25rem;
+    border: 2px solid #d1d5db; /* Tailwind gray-300 */
+    border-radius: 0.25rem;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #ffffff;
+    color: #1f2937; /* Tailwind gray-800 */
+}
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #3b82f6; /* Tailwind blue-500 */
+}
+.dataTables_info {
+    padding-bottom: 10px;
+}
+/* Custom styling for the "Show X entries" dropdown */
+.dataTables_wrapper .dataTables_length {
+    margin-bottom: 1rem;
+}
+.dataTables_wrapper .dataTables_length label {
+    font-weight: 600;
+    color: #1f2937; /* Tailwind gray-800 */
+}
+.dataTables_wrapper .dataTables_length select {
+    padding: 0.5rem 1rem;
+    border: 2px solid #d1d5db; /* Tailwind gray-300 */
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    color: #1f2937; /* Tailwind gray-800 */
+    outline: none;
+    transition: border-color 0.2s;
+}
+.dataTables_wrapper .dataTables_length select:focus {
+    border-color: #3b82f6; /* Tailwind blue-500 */
+}
