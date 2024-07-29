@@ -1,22 +1,22 @@
-Domstol,Målnummer,Mål registrerat år,Brott,FUP,Dom,Påföljd,Notat,
+Domstol,Målnummer,År,Brott,FUP,Dom,Påföljd,Notat,Flashbacktråd
 Alingsås TR,B 742-23,2023,"Skadegörelse, försök till mord, mordbrand, synnerligen grovt vapenbrott",Ja,,,"Automatvapen i skogen, Alingsås"
-Alingsås TR,B 1065-19,2019,"Mord, brott mot griftefrid, narkotikastrafflagen framställan och innehav",Ja,,
-Alingsås TR,B 1233-15,2015,"Mord",Ja,,,
-Alingsås TR,B 1491-22,2022,"Försök till mord, grovt vapenbrott, grovt skyddande av brottsling",Ja,,,
-Alingsås TR,B 1859-23,2023,"Grovt gravfridsbrott, mord",Ja,,,
+Alingsås TR,B 1065-19,2019,"Mord, brott mot griftefrid, narkotikastrafflagen framställan och innehav",Ja,
+Alingsås TR,B 1233-15,2015,"Mord",Ja,
+Alingsås TR,B 1491-22,2022,"Försök till mord, grovt vapenbrott, grovt skyddande av brottsling",Ja,
+Alingsås TR,B 1859-23,2023,"Grovt gravfridsbrott, mord",Ja,
 Attunda TR,B 96-23,2023,"Narkotikabrott, grovt narkotikabrott, medhjälp till grovt narkotikabrott, grovt vapenbrott, ",Ja,"TR",Fängelse,"Fem tilltalade"
 Attunda TR,B 126-19,2019,"Olovlig körning, rattfylleri, narkotikabrott, ringa narkotikabrott, grovt vapenbrott",Ja,"TR",Fängelse,"Två tilltalade"
 Attunda TR,B 185-22,2022,"Försök till mord, ringa narkotikabrott, grovt vapenbrott",Ja,"TR",Fängelse,"Fyra tilltalade"
 Attunda TR,B 295-23,2023,"Grovt vapenbrott",Ja,,,,
-Attunda TR,B 367-21,2021,"Mord",Ja,,,,
+Attunda TR,B 367-21,2021,"Mord",Ja,
 Attunda TR,B 664-23,2023,"Kränkande fotografering, mord",Ja,,,"Maskad FUP"
 Attunda TR,B 901-23,2023,"Narkotikasmuggling, grov narkotikasmuggling",Ja,,,"FUP av Tullverket"
 Attunda TR,B 1059-22,2022,"Grovt narkotikabrott, ringa narkotikabrott, narkotikabrott, misshandel, vapenlagen, olovlig körning,",Ja,TR,Fängelse,"Fyra tilltalade"
 Attunda TR,B 1097-23,2023,"Allmänfarlig ödeläggelse, grovt olaga hot, grovt vapenbrott",Ja,TR,Fängelse
-Attunda TR,B 1407-17,2017,"Grov förskingring, bokföringsbrott, försvårande av skattekontroll, brott mot griftefriden, mord",Ja,,,
+Attunda TR,B 1407-17,2017,"Grov förskingring, bokföringsbrott, försvårande av skattekontroll, brott mot griftefriden, mord",Ja,
 Attunda TR,B 1470-16,2016,"Ringa narkotikabrott, medhjälp till brott mot griftefrid, olovlig körning, rattfylleri, ringa vapenbrott",Ja,TR,Fängelse,"Två tilltalade"
 Attunda TR,B 1526-10,2010,"Mord",Ja,TR,"Rättspsykiatrisk vård med särskild utskrivningsprövning"
-"Attunda TR, Svea HR",B 1652-20,2020,"Mord, vapenlagen, narkotikainnehav, grovt rån",Ja,"Svea hovrätt",
+"Attunda TR, Svea hovrätt",B 1652-20,2020,"Mord, vapenlagen, narkotikainnehav, grovt rån",Ja,"Svea hovrätt",
 Attunda TR,B 1683-23,2023,"Dråp, grovt gravfridsbrott",Ja,Tingsrätt,"Fängelse, utvisning","Tysk medborgare"
 Attunda TR,B 1750-22,2022,"Vapenlagen, grovt narkotikabrott, grovt vapenbrott, olovlig befattning med falska pengar, olaga hot, rån, misshandel, olaga frihetsberövande",Ja,TR,"Fängelse, skyddstillsyn","Sju tilltalade"
 Attunda TR,B 2191-20,2020,"Synnerligen grov narkotikasmuggling, synnerligen grovt narkotikabrott,",Ja,,,"FUP av NOA"
@@ -35,9 +35,34 @@ Attunda TR,B 4853-22,2022,"Grovt narkotikabrott, synnerligen grovt narkotikabrot
 Attunda TR,B 5081-23,2023,"Mord",Ja,TR,Fängelse,"Två tilltalade"
 Attunda TR,B 5163-23,2023,"Mord, grovt vapenbrott,",Ja,,,"Fyra tilltalade"
 Attunda TR,B 5297-22,2022,"Grovt vapenbrott",Ja,,,"Två misstänkta"
-Attunda TR,B 5353-17,2017,"Mord",Ja,,,
-Attunda TR,B 5369-22,2022,"Försök till mord, grovt vapenbrott, medhjälp till försök till mord, narkotikabrott, vapenbrott, synnerligen grovt vapenbrott, anstiftan till försök till mord, synnerligen grovt brott mot lagen om brandfarliga och explosiva varor", Ja,TR,Fängelse,"Sex tilltalade"
+Attunda TR,B 5353-17,2017,"Mord",Ja,
+Attunda TR,B 5369-22,2022,"Försök till mord, grovt vapenbrott, medhjälp till försök till mord, narkotikabrott, vapenbrott, synnerligen grovt vapenbrott, anstiftan till försök till mord, synnerligen grovt brott mot lagen om brandfarliga och explosiva varor",Ja,TR,Fängelse,"Sex tilltalade"
+Attunda TR,B 5810-22,2022,"Grovt skattebrott, brott mot aktiebolagslagen",Ja,TR,"Fängelse och näringsförbud, samt friad resp.","Norsk medborgare. Två tilltalade"
+Attunda TR,B 5816-20,2020,"Mord,Ja,
+Attunda TR,B 5862-21,2021,"Näringspenningtvätt, grovt brott",Ja,,,"Två misstänkta"
+Attunda TR,B 6062-20,2020,"Grovt narkotikabrott, synnerligen grovt narkotikabrott, grovt vapenbrott",Ja,,,"Fyra misstänkta"
+Attunda TR,B 6440-22,2022,"Grov obehörig befattning med hemlig uppgift",Ja,,,"FUP från SÄPO. Ena misstänkta helt maskad"
+Attunda TR,B 6724-15,2015,"Mord, brott mot griftefrid",Ja,TR,"Rättspsykiatrisk vård med särskild utskrivningsprövning"
+Attunda TR,B 6879-22,2022,"Brott mot utlänningslagen, stöld",Ja,
+Attunda TR,B 7225-22,2022,"Grovt vapenbrott, rån. Grov olovlig körning, rattfylleri, ringa narkotikabrott",Ja,,,"Två misstänkta"
+Attunda TR,B 7380-22,2022,"Synnerligen grovt narkotikabrott, synnerligen grov narkotikasmuggling",Ja,"Deldom tingsrätt","Fängelse och fängelse samt utvisning, resp.","Två tilltalade"
+Attunda TR,B 8380-20,2020,"Grovt häleri",Ja,"Svea hovrätt","Okänt"
+Attunda TR,B 8814-18,2018,"Automatmissbruk, rån",Ja
+Attunda TR,B 8840-19,2019,"Förberedelse till mord, mord",Ja,
+Attunda TR,B 9004-23,2023,"Barnpornografibrott, grovt olovligt anskaffande av alkohol, sexuellt ofredande mot barn, våldtäkt mot barn",Ja,,,"Misstänkte född -98"
+Attunda TR,B 9712-22,2022,"Brott mot lagen om brandfarliga och explosiva varor, synnerligen grovt vapenbrott",Ja,
+Attunda TR,B 9760-23,2023,"Försök till mord, mord",Ja,TR,"Livstids fängelse"
+Attunda TR,B 10010-20,2020,"Försök till mord, grovt vapenbrott. Anstiftan av försök till mord. Medhjälp till försök till mord.",Ja,TR,"Sluten ungdomsvård. Fängelse 18 år. Fängelse 8 år. Fängelse 10 år.","Fyra tilltalade. Ekrem Güngör försvarar ena tilltalade"
+Attunda TR,B 11720-20,2020,"Grovt narkotikabrott",Ja,
+"Attunda TR, Svea hovrätt",B 11763-23,2023,"Grovt brott mot tystnadsplikt, bBrott mot tystnadsplikt, dataintrång",Ja,TR,"Fängelse","Tilltalade var handläggare vid tingsrätten som röjde hemliga uppgifter. Överklagan till Svea hovrätt finns med (Svea HR B 238-24)."
+Attunda TR,B 11948-22,2022,"Synnerligen grovt-, grovt- och narkotikabrott",Ja,TR,"Fängelse","Åtta tilltalade. FUP från Tullverket"
+Attunda TR,B 11950-22,2022,"Förberedelse till mord, grovt narkotikabrott, grovt vapenbrott, ringa narkotikabrott",Ja,
+Attunda TR,B 12175-22,2022,"Grovt vapenbrott, ringa narkotikabrott, grovt djurplågeri",Ja,,,"Får slaktat med slö kniv"
+Attunda TR,B 12348-20,2020,"Grovt bidragsbrott, penningtvättsbrott, försök till bedrägeri, grovt penningtvättsbrott",Ja
+Attunda TR,B 12678-19,2019,"Grovt vapenbrott, olaga hot, grovt- ringa samt narkotikabrott, brott mot knivlagen",Ja,TR,"Fängelse"
+Attunda TR,B 13968-23,2023,"Fullbordad våldtäkt",Ja,TR,"Fängelse","Polis våldtog civilperson"
+Blekinge TR,B 116-21,2021,"Grov stöld, grovt rån, mord"
 Göteborgs TR,B 6947-24,2024,"Våldtäkt",,TR,"3 år 6 månader, utvisning",
 Linköpings TR,B2426-20,2020,"Mord",Ja,TR,"Rättspsykiatrisk vård med särskild utskrivningsprövning","Dubbelmordet i Linköping"
-Linköpings TR,B1538-14,2014,"Narkotikabrott innehav, Försök till narkotikaförsäljning, narkotikasmuggling",Ja,,,"Idas shop, drogshop darknet"
-Eksjö TR,B 187-22,2022,"Brott mot griftefriden, mord",Ja,TR,"Livstids fängelse","Fallet Tove"
+Linköpings TR,B1538-14,2014,"Narkotikabrott innehav, försök till narkotikaförsäljning, narkotikasmuggling",Ja,,,"Idas shop, drogshop darknet"
+Eksjö TR,B 187-22,2022,"Brott mot griftefriden, mord",Ja,TR,"Livstids fängelse i TR","Fallet Tove"
