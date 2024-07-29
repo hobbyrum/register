@@ -24,6 +24,7 @@ table.dataTable tbody tr:nth-child(even) {
 table.dataTable tbody tr:hover {
     background-color: #d1d5db; /* Tailwind gray-300 */
 }
+
 /* Custom styling for pagination buttons */
 .dataTables_wrapper .dataTables_paginate .paginate_button {
     padding: 0.5rem 1rem;
@@ -45,6 +46,7 @@ table.dataTable tbody tr:hover {
     background-color: #9ca3af; /* Tailwind gray-400 */
     color: #ffffff;
 }
+
 /* Custom styling for the search input */
 .dataTables_wrapper .dataTables_filter {
     margin-bottom: 1rem;
@@ -67,8 +69,9 @@ table.dataTable tbody tr:hover {
     border-color: #3b82f6; /* Tailwind blue-500 */
 }
 .dataTables_info {
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
+
 /* Custom styling for the "Show X entries" dropdown */
 .dataTables_wrapper .dataTables_length {
     margin-bottom: 1rem;
@@ -76,6 +79,7 @@ table.dataTable tbody tr:hover {
 .dataTables_wrapper .dataTables_length label {
     font-weight: 600;
     color: #1f2937; /* Tailwind gray-800 */
+    padding-top: 1rem;
 }
 .dataTables_wrapper .dataTables_length select {
     padding: 0.5rem 1rem;
@@ -88,4 +92,8 @@ table.dataTable tbody tr:hover {
 }
 .dataTables_wrapper .dataTables_length select:focus {
     border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.dataTables_length {
+    padding-top: 1rem;
 }
