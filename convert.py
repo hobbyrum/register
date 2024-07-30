@@ -1,5 +1,18 @@
-import pandas as pd
+import csv
+import json
 
-df = pd.read_csv('registry.csv')
+input_csv_file = 'data.csv'
+output_json_file = 'data.json'
 
-df.to_json('registry.json', orient='records')
+data = []
+
+with open(input_csv_file, mode='r', encoding='utf-8') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    
+    for row in csv_reader:
+        data.append(row)
+        
+with open(output_json_file, mode='w', encoding='utf-8') as json_file:
+    json.dump(data, json_file, indent=4, ensure_ascii=False)
+    
+print(f"Data has been successfully converted to {output_json_file}")
